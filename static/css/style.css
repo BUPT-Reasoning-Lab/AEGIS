@@ -1,0 +1,94 @@
+/* static/css/style.css */
+
+/* 1. 字体声明：优先使用 Sitka Text */
+body {
+    font-family: "Charter", "Sitka Text", serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .hero-header {
+    /* 渐变色：粉-紫-蓝 */
+    background: linear-gradient(135deg, #f4d7a7 0%, #fbcdc5 50%, #f8c4d1 100%);
+    /* 关键：使用 100vh 确保正好占满一屏，上下 padding 缩小到 2rem */
+    padding: 2rem; 
+    height: 100vh; 
+    min-height: 600px; /* 防止在极小屏幕上重叠 */
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .container.is-max-desktop {
+    max-width: 1200px !important;
+  }
+  
+  /* 2. 项目标题：极致压缩字距，防止超出 */
+  .project-name {
+    font-size: 8.5rem; 
+    font-weight: 900;
+    line-height: 0.8;    /* 进一步压缩行高 */
+    margin-bottom: 0.5rem; /* 大幅减小标题与副标题间距 */
+    color: #000000 !important;
+    letter-spacing: -6px; /* 必须开启！负字距防止标题过长并增加雕刻感 */
+    margin-left: -10px; 
+  }
+  
+  /* 3. 副标题：紧贴标题，压缩下方间距 */
+  .project-subtitle {
+    font-size: 1.8rem;
+    font-weight: 700 !important;
+    line-height: 1.15;    /* 压缩副标题内部行高 */
+    margin-bottom: 1.2rem; /* 大幅减小副标题与作者列表间距 */
+    color: #000000 !important;
+    max-width: 1000px;
+  }
+  
+  /* 4. 作者列表：彻底清理重复定义，极致紧凑 */
+  .author-info {
+    font-size: 1.1rem; /* 保持字号 */
+    font-weight: 600;
+    color: #000000 !important;
+    
+    /* 核心：将行高降至极限 (1.1 甚至 1.05)，消除文字上下的空气感 */
+    line-height: 1.1 !important; 
+    
+    /* 压缩整块区域与上下元素的间距 */
+    margin-top: 0.5rem;
+    margin-bottom: 1.2rem;
+    
+    /* 确保没有内边距撑开高度 */
+    padding: 0;
+  }
+  
+  .authors {
+    /* 消除段落自带的下方间距 */
+    margin-bottom: 0.1rem !important;
+  }
+  
+  /* 3. 作者链接：默认黑色 */
+  
+  .author-link {
+  
+    color: #000000 !important; /* 强制黑色 */
+  
+    text-decoration: none;
+  
+    transition: color 0.3s ease;
+  
+    display: inline-block;
+  
+    margin-right: 5px;
+  
+  }
+  
+  /* Hover 时变为黑色 */
+  
+  .author-link:hover {
+  
+    color: #93c5ee !important; /* 蓝色 */
+  
+    text-decoration: none;
+  
+  }
