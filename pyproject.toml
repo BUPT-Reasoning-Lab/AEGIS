@@ -1,0 +1,30 @@
+[project]
+name = "AEGIS"
+version = "0.1.0"
+description = "AEGIS benchmark evaluation scripts"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+
+[dependency-groups]
+# Runtime dependencies for running the benchmark scripts.
+benchmark = [
+  # Vendored local dependency (installed via tool.uv.sources below)
+  "llm-json-parser",
+  # Benchmark runtime deps
+  "openai>=1.0.0",
+  "pydantic>=2.0.0",
+  "pillow>=10.0.0",
+]
+
+# Optional deps for the few-shot suite (retrieval engine can be heavy).
+few-shot = [
+  "query-engine",
+  "chat-engine",
+]
+
+[tool.uv.sources]
+llm-json-parser = { path = "scripts/3rd_party/llm_json_parser", editable = true }
+query-engine = { path = "scripts/3rd_party/query_engine", editable = true }
+chat-engine = { path = "scripts/3rd_party/chat_engine", editable = true }
+

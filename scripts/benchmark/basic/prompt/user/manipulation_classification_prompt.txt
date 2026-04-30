@@ -1,0 +1,40 @@
+You are presented with a **scientific image** that has been **partially modified using AI techniques**.
+The **red-highlighted region** marks the specific area that has been edited.
+
+You are also given the **original caption** of the unedited image, which describes its intended meaning and content.
+
+For reference, the manipulation falls into one of three categories:
+
+Remove: the original foreground object becomes background or is removed;
+
+Insert: a background region becomes a new foreground object;
+
+Alter: either the background or an existing foreground object is modified.
+---
+### Original Caption:
+> "{CAPTION_TEXT}"
+---
+### Image  [see below]
+---
+
+### Question
+**What is the most likely manipulation behind the AI modification in the red-highlighted region?**
+---
+### Options (Single Choice)
+{OPTIONS_BLOCK}
+---
+
+### Output Format (Strict)
+Return ONLY a JSON object in the following format:
+```json
+{{
+  "answer": "A",
+  "reason": "..."
+}}
+```
+Rules:
+- "answer" must be exactly one of: "A", "B", "C", "D".
+- "reason" must briefly explain why this choice was chosen.
+- "reason" must be one or two concise sentences.
+- Do NOT include XML, Markdown, or comments.
+- Output must be valid JSON.

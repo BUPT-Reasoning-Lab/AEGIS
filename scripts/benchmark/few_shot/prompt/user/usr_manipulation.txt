@@ -1,0 +1,28 @@
+### Images:
+- **Reference Image**: [See below image 1] (authentic baseline)
+- **Test Image**: [See below image 2] (under investigation)
+
+### Original Caption
+- **Test Image**: {test_caption}
+
+### Question 
+**What is the most likely manipulation behind the AI modification in the red-highlighted region?**
+
+### Options (Single Choice)
+{option_block}
+
+### Output Format (Strict)
+Respond using this format only:
+```json
+{{
+  "answer": "{{selected_letter}}"
+}}
+```
+
+### Output Examples:
+```json
+{{"answer": "A"}}
+```
+```json
+{{"answer": "B"}}
+```

@@ -1,0 +1,26 @@
+You are given a single academic / scientific image.
+---
+### Image  [see below]
+---
+
+### Question
+** Does the image contain any AI-generated or AI-edited text forgeries, based on visual artifacts, structural irregularities, or semantic mismatches between the embedded text and the scientific content? **
+---
+### Options (Single Choice)
+{OPTIONS_BLOCK}
+---
+
+### Output Format (Strict)
+Return ONLY a JSON object in the following format:
+```json
+{{
+  "answer": "A",
+  "reason": "..."
+}}
+```
+Rules:
+- "answer" must be exactly one of: "A", "B".
+- "reason" must briefly explain why this choice was chosen.
+- "reason" must be one or two concise sentences.
+- Do NOT include XML, Markdown, or comments.
+- Output must be valid JSON.

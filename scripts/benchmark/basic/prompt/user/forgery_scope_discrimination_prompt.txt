@@ -1,0 +1,26 @@
+You are given a single academic / scientific image.
+---
+### Image  [see below]
+---
+
+### Question
+**Based on the visual characteristics and the extent of AI intervention, how should this image be categorized??(According to the area affected by AI edits, the ai images are categorized as either fully AI-generated or partially AI-edited.")**
+---
+### Options (Single Choice)
+{OPTIONS_BLOCK}
+---
+
+### Output Format (Strict)
+Return ONLY a JSON object in the following format:
+```json
+{{
+  "answer": "A",
+  "reason": "..."
+}}
+```
+Rules:
+- "answer" must be exactly one of: "A", "B", "C", "D".
+- "reason" must briefly explain why this choice was chosen.
+- "reason" must be one or two concise sentences.
+- Do NOT include XML, Markdown, or comments.
+- Output must be valid JSON.

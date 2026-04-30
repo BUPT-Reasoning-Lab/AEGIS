@@ -1,0 +1,33 @@
+
+### Images:
+- **Reference Image**: [See below image 1] (authentic baseline)
+- **Test Image**: [See below image 2] (under investigation)
+
+### Question 
+**Does the image contain any AI-generated or AI-edited text forgeries, based on visual artifacts, structural irregularities, or semantic mismatches between the embedded text and the scientific content?**
+
+### Options (Single Choice)
+{option_block}
+
+### Output Format (Strict)
+Respond using this format only:
+```json
+{{
+  "answer": "{{selected_letter}}"
+}}
+```
+
+### Output Examples:
+```json
+{{"answer": "A"}}
+```
+```json
+{{"answer": "B"}}
+```
+
+
+**Important Notes:**
+- Select ONLY one option letter (A/B)
+- Return valid JSON with "answer" key
+- No explanations, reasoning, or image descriptions
+- Base your decision on the Test Image relative to the Reference Image

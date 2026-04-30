@@ -1,0 +1,15 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+Makefile
+.env
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Local uv cache (used in restricted environments)
+.uv-cache/
