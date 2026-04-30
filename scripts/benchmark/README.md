@@ -2,8 +2,8 @@
 
 This folder contains the benchmark runner and prompt/config definitions for AEGIS.
 
-The layout and installation workflow are designed to be similar to
-[THEMIS](https://github.com/BUPT-Reasoning-Lab/THEMIS).
+The layout and installation workflow follow a lightweight, reproducible structure
+based on `uv` dependency groups.
 
 ## Installation
 
