@@ -55,9 +55,7 @@ We introduce AEGIS, A holistic benchmark for Evaluating forensic analysis of AI-
 
 ## 🛠️ Installation
 
-This repository follows an installation workflow similar to
-[THEMIS](https://github.com/BUPT-Reasoning-Lab/THEMIS): use `uv` dependency groups to
-install benchmark runtime dependencies.
+use `uv` dependency groups to install benchmark runtime dependencies.
 
 ### 1) Create environment
 

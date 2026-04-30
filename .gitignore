@@ -13,3 +13,22 @@ Makefile
 
 # Local uv cache (used in restricted environments)
 .uv-cache/
+
+# Test / type-check / lint caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+coverage.xml
+
+# Notebooks / editor / OS
+.ipynb_checkpoints/
+.DS_Store
+
+# Logs
+*.log
+
+# Benchmark outputs
+results/
+results_*/
