@@ -92,3 +92,104 @@ body {
     text-decoration: none;
   
   }
+
+  label-morandi {
+    color: #93c5ee !important; 
+    font-style: italic;
+    font-weight: 900;
+    margin-right: 8px;
+    /* 之前教的物理加粗，让它更显眼 */
+    text-shadow: 0.4px 0 0 #34a1f9; 
+  }
+  
+  .affiliations {
+    margin-top: 0.8rem !important; /* 让单位紧贴名字 */
+  }
+  
+  .affiliation-text {
+    color: #000000;
+    font-weight: 700;
+  }
+  
+  .note {
+    font-size: 1.0rem;
+    color: #666666 !important;
+    margin-top: 0.8rem; /* 让备注紧贴 */
+  }
+  
+  /* 5. 胶囊按钮：增大字体与图标 */
+  .buttons-container {
+    display: flex;
+    /* 调整这里：增加 gap 实现“分散布局” */
+    gap: 35px; 
+    
+    flex-wrap: wrap;
+    margin-top: 2rem; /* 增加按钮组与上方作者信息的距离，进一步减缓压抑感 */
+  }
+  
+  .button-capsule {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border: 3px solid #666666; 
+    
+    /* 增加内边距，让按钮整体更宽大 */
+    padding: 12px 30px; 
+    border-radius: 50px;
+    font-weight: bold;
+    
+    /* 1. 增大字体 */
+    font-size: 1.25rem; 
+    
+    display: inline-flex;
+    align-items: center;
+    
+    /* 2. 增大图标与文字之间的间距 */
+    gap: 12px; 
+    text-decoration: none !important;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  }
+  
+  /* 3. 专门针对内部图标容器的大小调整 */
+  .button-capsule .icon {
+    font-size: 1.4rem; /* 图标比文字稍微大一点点，视觉上更平衡 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* 4. 确保学术图标 ai 和 font-awesome 图标大小一致 */
+  .button-capsule .icon i {
+    vertical-align: middle;
+  }
+  
+  /* Hover 状态保持 */
+  .button-capsule:hover {
+    background-color: #93c5ee !important; 
+    color: #ffffff !important; 
+    border-color: #34a1f9; 
+    transform: translateY(-3px); 
+    box-shadow: 0 8px 20px rgba(52, 161, 249, 0.3);
+  }
+  
+  /* Hover 时图标颜色同步变白 */
+  .button-capsule:hover .icon i {
+    color: #ffffff !important;
+  }
+  
+  /* 6. Logo：按照你红色圆圈的位置进行绝对定位 */
+  .project-logo{
+    position: absolute;
+    left: 2%;        /* 靠左移动 */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 35%;      /* 宽度控制在一屏内 */
+    max-width: 420px;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+    border: 6px solid rgba(255, 255, 255, 0.4);
+  }
+  
