@@ -29,8 +29,8 @@
 Beijing University of Posts and Telecommunications
 
   <p align="center">
-    <!-- <a href='https://arxiv.org/pdf/2412.04292'>
-      <img src='https://img.shields.io/badge/Paper-PDF-green?style=flat&logo=arXiv&logoColor=green' alt='arXiv PDF'> </a> -->
+    <a href='https://arxiv.org/pdf/2604.28177'>
+      <img src='https://img.shields.io/badge/Paper-PDF-green?style=flat&logo=arXiv&logoColor=green' alt='arXiv PDF'> </a>
     <a href='https://bupt-reasoning-lab.github.io/AEGIS/' style='padding-left: 0.5rem;'>
       <img src='https://img.shields.io/badge/Project-Page-blue?style=flat&logo=Google%20chrome&logoColor=blue' alt='Project Page'> </a>
     <a href='https://huggingface.co/datasets/BUPT-Reasoning-Lab/AEGIS/' style='padding-left: 0.5rem;'>
