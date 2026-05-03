@@ -42,7 +42,6 @@ Beijing University of Posts and Telecommunications
 ## 📰 News
 - **[2026.4.6]**: 🎉 AEGIS was accepted to ACL 2026 Main Conference! 
 - **[2025.4.29]**: 🤗 AEGIS dataset are released on huggingface. Check out [here](https://huggingface.co/datasets/BUPT-Reasoning-Lab/AEGIS/tree/main).
-- **[2025.5.3]**: 🔥 We have released **AEGIS: A Holistic Benchmark for Evaluating Forensic Analysis of AI-Generated Academic Images**. Check out the [paper](https://arxiv.org/abs/2604.28177).
 
 ## 🔍 Overview
 
